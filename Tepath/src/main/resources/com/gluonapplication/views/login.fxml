@@ -80,7 +80,7 @@
    <center>
       <ImageView fitHeight="180.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../../../../../../../../Desktop/logo.PNG" />
+            <Image url="@../../../../../../../../../Desktop/Library_for_TepApp/logo.PNG" />
          </image></ImageView>
    </center>
 </View>
