@@ -7,6 +7,7 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -60,7 +61,7 @@
                         <Insets top="20.0" />
                      </padding>
                   </PasswordField>
-                  <Button minWidth="45.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="88.0" text="Anmelden">
+                  <Button fx:id="anmeöden" minWidth="45.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="32.0" prefWidth="88.0" text="Anmelden">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -77,6 +78,9 @@
       </VBox>
    </bottom>
    <center>
-      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+      <ImageView fitHeight="180.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../../../../../Desktop/logo.PNG" />
+         </image></ImageView>
    </center>
 </View>
