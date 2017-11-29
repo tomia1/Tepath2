@@ -18,7 +18,8 @@ import javafx.scene.image.Image;
 
 public class DrawerManager {
 
-    private final NavigationDrawer drawer;
+    private static final String CHECKLIST_VIEW = "Checklisten";
+	private final NavigationDrawer drawer;
 
     public DrawerManager() {
         this.drawer = new NavigationDrawer();
@@ -29,8 +30,8 @@ public class DrawerManager {
         drawer.setHeader(header);
 
         final Item startseite = new ViewItem("Startseite", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
-        final Item ablauf = new ViewItem("Ablauf", MaterialDesignIcon.QUEUE_PLAY_NEXT.graphic(), SECONDARY_VIEW);
-        final Item checkliste = new ViewItem("Checkliste", MaterialDesignIcon.CHECK.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        final Item ablauf = new ViewItem("Ablauf", MaterialDesignIcon.QUEUE_PLAY_NEXT.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        final Item checkliste = new ViewItem("Checklisten", MaterialDesignIcon.CHECK.graphic(), CHECKLIST_VIEW, ViewStackPolicy.SKIP);
         final Item kontakte = new ViewItem("Kontakte", MaterialDesignIcon.CONTACTS.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
         final Item gesundh = new ViewItem("Gesundheitszustand", MaterialDesignIcon.HEALING.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
         drawer.getItems().addAll(startseite, ablauf, checkliste, kontakte, gesundh);
