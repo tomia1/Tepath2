@@ -123,7 +123,7 @@
    <bottom>
       <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="zurück" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getBackToPrevious" prefHeight="18.0" prefWidth="145.0" text="Zurück">
+            <Button fx:id="zurück" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getBackToPrevious" prefHeight="32.0" prefWidth="146.0" text="Zurück">
                <HBox.margin>
                   <Insets right="200.0" top="50.0" />
                </HBox.margin>
@@ -134,7 +134,7 @@
                   <Insets left="100.0" right="100.0" />
                </opaqueInsets>
             </Button>
-            <Button fx:id="send" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendMessage" prefHeight="18.0" prefWidth="94.0" text="Senden">
+            <Button fx:id="send" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendMessage" prefHeight="32.0" prefWidth="94.0" text="Senden">
                <padding>
                   <Insets left="20.0" />
                </padding>
