@@ -25,7 +25,7 @@ public class ChecklistPresenter {
     private URL location;
 
     @FXML
-    private View checklist;
+    private View viewChecklist;
 
     @FXML
     private Button vorSpezialist;
@@ -53,10 +53,10 @@ public class ChecklistPresenter {
 
     @FXML
     public void initialize() {
-        checklist.setShowTransitionFactory(BounceInRightTransition::new);
+        viewChecklist.setShowTransitionFactory(BounceInRightTransition::new);
         
         
-        checklist.showingProperty().addListener((obs, oldValue, newValue) -> {
+        viewChecklist.showingProperty().addListener((obs, oldValue, newValue) -> {
             if (newValue) {
                 AppBar appBar = MobileApplication.getInstance().getAppBar();
                 appBar.setNavIcon(MaterialDesignIcon.MENU.button(e -> 
