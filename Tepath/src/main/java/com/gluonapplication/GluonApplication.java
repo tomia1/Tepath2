@@ -21,7 +21,7 @@ public class GluonApplication extends MobileApplication {
     public void init() {
         addViewFactory(PRIMARY_VIEW, () -> new PrimaryView(PRIMARY_VIEW).getView());
         addViewFactory(SECONDARY_VIEW, () -> new SecondaryView(SECONDARY_VIEW).getView());
-        addViewFactory(CHECKLIST_VIEW, ()-> new ChecklistView(HOME_VIEW).getView());
+        addViewFactory(CHECKLIST_VIEW, ()-> new ChecklistView(CHECKLIST_VIEW).getView());
         
         addLayerFactory(MENU_LAYER, () -> new SidePopupView(new DrawerManager().getDrawer()));
     }
@@ -31,6 +31,6 @@ public class GluonApplication extends MobileApplication {
         Swatch.BLUE.assignTo(scene);
 
         scene.getStylesheets().add(GluonApplication.class.getResource("style.css").toExternalForm());
-        ((Stage) scene.getWindow()).getIcons().add(new Image(GluonApplication.class.getResourceAsStream("/icon.png")));
+        ((Stage) scene.getWindow()).getIcons().add(new Image(GluonApplication.class.getResourceAsStream("/tep.JPG")));
     }
 }
