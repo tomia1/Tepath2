@@ -16,7 +16,7 @@ public class ChecklistView {
     
     public View getView() {
         try {
-            View view = FXMLLoader.load(PrimaryView.class.getResource("checklist.fxml"));
+            View view = FXMLLoader.load(ChecklistView.class.getResource("checklist.fxml"));
             view.setName(name);
             return view;
         } catch (IOException e) {
