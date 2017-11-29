@@ -1,5 +1,6 @@
 package com.gluonapplication;
 
+import com.gluonapplication.views.ChecklistView;
 import com.gluonapplication.views.PrimaryView;
 import com.gluonapplication.views.SecondaryView;
 import com.gluonhq.charm.glisten.application.MobileApplication;
@@ -11,14 +12,16 @@ import javafx.stage.Stage;
 
 public class GluonApplication extends MobileApplication {
 
-    public static final String PRIMARY_VIEW = HOME_VIEW;
-    public static final String SECONDARY_VIEW = "Secondary View";
+    public static final String PRIMARY_VIEW = HOME_VIEW; // primaryView ist die Startseite
+    public static final String SECONDARY_VIEW = "Ablauf"; // secondaryView ist die Ablaufseite
     public static final String MENU_LAYER = "Side Menu";
+	private static final String OTHER_VIEW = null;
     
     @Override
     public void init() {
         addViewFactory(PRIMARY_VIEW, () -> new PrimaryView(PRIMARY_VIEW).getView());
         addViewFactory(SECONDARY_VIEW, () -> new SecondaryView(SECONDARY_VIEW).getView());
+        addViewFactory(OTHER_VIEW, () -> new ChecklistView(OTHER_VIEW).getView());
         
         addLayerFactory(MENU_LAYER, () -> new SidePopupView(new DrawerManager().getDrawer()));
     }

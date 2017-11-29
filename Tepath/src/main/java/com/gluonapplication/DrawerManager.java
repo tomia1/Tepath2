@@ -22,16 +22,19 @@ public class DrawerManager {
 
     public DrawerManager() {
         this.drawer = new NavigationDrawer();
-        
-        NavigationDrawer.Header header = new NavigationDrawer.Header("Gluon Mobile",
-                "Multi View Project",
-                new Avatar(21, new Image(DrawerManager.class.getResourceAsStream("/icon.png"))));
+
+        NavigationDrawer.Header header = new NavigationDrawer.Header("TEPATH",
+                "Menu",
+                new Avatar(21, new Image(DrawerManager.class.getResourceAsStream("/tep.JPG"))));
         drawer.setHeader(header);
-        
-        final Item primaryItem = new ViewItem("Primary", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
-        final Item secondaryItem = new ViewItem("Secondary", MaterialDesignIcon.DASHBOARD.graphic(), SECONDARY_VIEW);
-        drawer.getItems().addAll(primaryItem, secondaryItem);
-        
+
+        final Item startseite = new ViewItem("Startseite", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
+        final Item ablauf = new ViewItem("Ablauf", MaterialDesignIcon.QUEUE_PLAY_NEXT.graphic(), SECONDARY_VIEW);
+        final Item checkliste = new ViewItem("Checkliste", MaterialDesignIcon.CHECK.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        final Item kontakte = new ViewItem("Kontakte", MaterialDesignIcon.CONTACTS.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        final Item gesundh = new ViewItem("Gesundheitszustand", MaterialDesignIcon.HEALING.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        drawer.getItems().addAll(startseite, ablauf, checkliste, kontakte, gesundh);
+
         if (Platform.isDesktop()) {
             final Item quitItem = new Item("Quit", MaterialDesignIcon.EXIT_TO_APP.graphic());
             quitItem.selectedProperty().addListener((obs, ov, nv) -> {
@@ -41,14 +44,14 @@ public class DrawerManager {
             });
             drawer.getItems().add(quitItem);
         }
-        
-        drawer.addEventHandler(NavigationDrawer.ITEM_SELECTED, 
+
+        drawer.addEventHandler(NavigationDrawer.ITEM_SELECTED,
                 e -> MobileApplication.getInstance().hideLayer(MENU_LAYER));
-        
+
         MobileApplication.getInstance().viewProperty().addListener((obs, oldView, newView) -> updateItem(newView.getName()));
         updateItem(PRIMARY_VIEW);
     }
-    
+
     private void updateItem(String nameView) {
         for (Node item : drawer.getItems()) {
             if (item instanceof ViewItem && ((ViewItem) item).getViewName().equals(nameView)) {
@@ -57,7 +60,7 @@ public class DrawerManager {
             }
         }
     }
-    
+
     public NavigationDrawer getDrawer() {
         return drawer;
     }
