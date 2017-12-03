@@ -1,12 +1,14 @@
 package com.gluonapplication.views;
 
+import com.gluonapplication.GluonApplication;
 import com.gluonhq.charm.glisten.application.MobileApplication;
 import com.gluonhq.charm.glisten.control.AppBar;
 import com.gluonhq.charm.glisten.mvc.View;
 import com.gluonhq.charm.glisten.visual.MaterialDesignIcon;
-import com.gluonapplication.GluonApplication;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
 
 public class PrimaryPresenter {
 
@@ -14,7 +16,37 @@ public class PrimaryPresenter {
     private View primary;
 
     @FXML
-    private Label label;
+    private Button ablaufBtn;
+
+    @FXML
+    private Button checklistbtn;
+
+    @FXML
+    private Button kontakteBtn;
+
+    @FXML
+    private Button gesBtn;
+
+    @FXML
+    void onClickAblauf(ActionEvent event) {
+    	ablaufBtn.onActionProperty();
+    }
+
+    @FXML
+    void onClickChecklist(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onClickGes(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onClickKontakte(ActionEvent event) {
+
+    }
+
 
     public void initialize() {
         primary.showingProperty().addListener((obs, oldValue, newValue) -> {
@@ -27,15 +59,6 @@ public class PrimaryPresenter {
                         System.out.println("Search")));
             }
         });
-    }
-
-    @FXML
-    void buttonClick() {
-        label.setText("Hello JavaFX Universe!");
-    }
-    @FXML
-    void myBtnClick() {
-        label.setText("Keep on the hard work,success is ahead, Inshaa Allah!");
     }
 
 }

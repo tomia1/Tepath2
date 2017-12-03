@@ -19,6 +19,8 @@ import javafx.scene.image.Image;
 public class DrawerManager {
 
     private static final String CHECKLIST_VIEW = "Checklisten";
+	private static final String KONTAKTE_VIEW = "Kontakte";
+	private static final String GESUNDHEITSZUSTAND_VIEW = "Gesundheitszustand";
 	private final NavigationDrawer drawer;
 
     public DrawerManager() {
@@ -32,8 +34,8 @@ public class DrawerManager {
         final Item startseite = new ViewItem("Startseite", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
         final Item ablauf = new ViewItem("Ablauf", MaterialDesignIcon.QUEUE_PLAY_NEXT.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
         final Item checkliste = new ViewItem("Checklisten", MaterialDesignIcon.CHECK.graphic(), CHECKLIST_VIEW, ViewStackPolicy.SKIP);
-        final Item kontakte = new ViewItem("Kontakte", MaterialDesignIcon.CONTACTS.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
-        final Item gesundh = new ViewItem("Gesundheitszustand", MaterialDesignIcon.HEALING.graphic(), SECONDARY_VIEW, ViewStackPolicy.SKIP);
+        final Item kontakte = new ViewItem("Kontakte", MaterialDesignIcon.CONTACTS.graphic(), KONTAKTE_VIEW, ViewStackPolicy.SKIP);
+        final Item gesundh = new ViewItem("Gesundheitszustand", MaterialDesignIcon.HEALING.graphic(), GESUNDHEITSZUSTAND_VIEW, ViewStackPolicy.SKIP);
         drawer.getItems().addAll(startseite, ablauf, checkliste, kontakte, gesundh);
 
         if (Platform.isDesktop()) {
