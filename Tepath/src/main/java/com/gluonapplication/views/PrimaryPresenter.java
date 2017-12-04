@@ -61,16 +61,16 @@ public class PrimaryPresenter {
         });
     }
 
-<<<<<<< HEAD
-    @FXML
-    void buttonClick() {
-        label.setText("Hello JavaFX Universe!");
-    }
-    @FXML
-    void myBtnClick() {
-        label.setText("keep on!");
-    }
-
-=======
->>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
+////<<<<<<< HEAD
+//    @FXML
+//    void buttonClick() {
+//        label.setText("Hello JavaFX Universe!");
+//    }
+//    @FXML
+//    void myBtnClick() {
+//        label.setText("keep on!");
+//    }
+//
+//=======
+////>>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
 }
