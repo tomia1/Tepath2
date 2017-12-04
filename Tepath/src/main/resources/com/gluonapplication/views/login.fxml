@@ -12,25 +12,26 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<View fx:id="primary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" stylesheets="@primary.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.views.PrimaryPresenter">
-   <top>
-      <TextField BorderPane.alignment="CENTER" />
-   </top>
+<View fx:id="primary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" stylesheets="@primary.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.views.PrimaryPresenter">
    <children>
       <VBox prefHeight="200.0" prefWidth="100.0" />
    </children>
    <bottom>
       <VBox alignment="CENTER" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="260.0">
                <children>
-                  <Label maxHeight="-Infinity" maxWidth="-Infinity" text="Name / ID">
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" text="Name / ID  ">
                      <HBox.margin>
-                        <Insets top="20.0" />
+                        <Insets />
                      </HBox.margin>
                   </Label>
+<<<<<<< HEAD
                   <TextField fx:id="userName" promptText="userName" />
                   <Label fx:id="label" prefHeight="30.0" prefWidth="90.0" />
+=======
+                  <TextField fx:id="userName" prefHeight="26.0" prefWidth="193.0" promptText="userName" />
+>>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
                </children>
                <padding>
                   <Insets bottom="40.0" />
@@ -39,13 +40,14 @@
                   <Insets />
                </VBox.margin>
             </HBox>
-            <HBox prefHeight="107.0" prefWidth="350.0">
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="260.0">
                <children>
-                  <Label text="Password">
+                  <Label text="Password  ">
                      <HBox.margin>
-                        <Insets top="20.0" />
+                        <Insets />
                      </HBox.margin>
                   </Label>
+<<<<<<< HEAD
                   <PasswordField fx:id="password" promptText="password" />
                   <Label text="Label" />
                   <Button fx:id="anmelden" minWidth="45.0" mnemonicParsing="false" onAction="#MakeLogin" onMouseClicked="#gotToHomePage" prefHeight="32.0" prefWidth="88.0" text="Anmelden">
@@ -53,6 +55,9 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Button>
+=======
+                  <PasswordField fx:id="password" prefHeight="26.0" prefWidth="193.0" promptText="password" />
+>>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
                </children>
                <VBox.margin>
                   <Insets />
@@ -61,13 +66,18 @@
                   <Insets bottom="100.0" />
                </padding>
             </HBox>
+            <HBox alignment="TOP_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="260.0">
+               <children>
+                  <Button fx:id="anmelden" minWidth="45.0" mnemonicParsing="false" onAction="#MakeLogin" onMouseClicked="#gotToHomePage" prefHeight="32.0" prefWidth="88.0" text="Anmelden" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </bottom>
    <center>
       <ImageView fitHeight="163.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../../../../../../../../../Desktop/Library_for_TepApp/logo.PNG" />
+            <Image url="@../../../tep.JPG" />
          </image></ImageView>
    </center>
 </View>
