@@ -35,7 +35,7 @@ public class PrimaryPresenter {
     }
     @FXML
     void myBtnClick() {
-        label.setText("Keep on the hard work,success is ahead, Inshaa Allah!");
+        label.setText("keep on!");
     }
 
 }
