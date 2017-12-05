@@ -26,12 +26,7 @@
                         <Insets />
                      </HBox.margin>
                   </Label>
-<<<<<<< HEAD
-                  <TextField fx:id="userName" promptText="userName" />
-                  <Label fx:id="label" prefHeight="30.0" prefWidth="90.0" />
-=======
                   <TextField fx:id="userName" prefHeight="26.0" prefWidth="193.0" promptText="userName" />
->>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
                </children>
                <padding>
                   <Insets bottom="40.0" />
@@ -47,17 +42,7 @@
                         <Insets />
                      </HBox.margin>
                   </Label>
-<<<<<<< HEAD
-                  <PasswordField fx:id="password" promptText="password" />
-                  <Label text="Label" />
-                  <Button fx:id="anmelden" minWidth="45.0" mnemonicParsing="false" onAction="#MakeLogin" onMouseClicked="#gotToHomePage" prefHeight="32.0" prefWidth="88.0" text="Anmelden">
-                     <HBox.margin>
-                        <Insets left="20.0" />
-                     </HBox.margin>
-                  </Button>
-=======
                   <PasswordField fx:id="password" prefHeight="26.0" prefWidth="193.0" promptText="password" />
->>>>>>> branch 'master' of https://github.com/tomia1/Tepath2.git
                </children>
                <VBox.margin>
                   <Insets />
